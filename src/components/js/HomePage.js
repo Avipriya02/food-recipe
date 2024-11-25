@@ -38,7 +38,7 @@ const HomePage = () => {
     return (
         <>
             <h1 className="head-home-page">Cook & Eat Food Recipe App!</h1>
-            <h4 className="sub-heading">Search Your Recipes Here</h4>
+            <h4 className="sub-heading">Search Recipes Here</h4>
             <div className="searchBar">
                 <input type="text" placeholder="Search for a recipe" onChange={searchQuery}></input>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search searchbtn" viewBox="0 0 16 16" onClick={apicallFunction}>
