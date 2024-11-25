@@ -26,7 +26,7 @@
     }
     .Recipe-Card-Structure p{
         width:100%;
-        font-size: 20px;
+        font-size: 16px;
         color: navy;
         text-align: center;
         font-weight: bold;
@@ -56,8 +56,8 @@
         justify-content: center;    
     }
     .Recipe-Card-Structure{
-        width:450px;
-        height: 450px;
+        width:400px;
+        height: 400px;
         display: flex;
         flex-direction: column;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

@@ -30,7 +30,7 @@ const HomePage = () => {
         }
         catch (err) {
             setError(true);  // In case of API error
-        } 
+        }
         finally {
             setLoad(false);
         }
@@ -45,8 +45,23 @@ const HomePage = () => {
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                 </svg>
             </div>
-            {error && <h4 className="sub-heading">Recipe not found. Please try a different search.</h4>}
             {load && <h4 className="sub-heading">The Content is loading...</h4>}
+            {error && <h4 className="sub-heading">Recipe not found. Please try a different search.</h4>}
+            {!data &&
+                <>
+                    <div className="Home_Page-Cover-Photos">
+                        <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?q=80&w=1910&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Not Available" className="Cover-Image" />
+                        <img src="https://images.unsplash.com/photo-1508737804141-4c3b688e2546?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Not Availble" className="Cover-Image" />
+                        <img src="https://images.unsplash.com/photo-1663059364204-e33b6bb49cc5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Not Available" className="Cover-Image" />
+                    </div><div className="Home_Page-Cover-Photos">
+                        <img src="https://images.unsplash.com/photo-1633424411336-f5b7a6886d88?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Not Available" className="Cover-Image" />
+                        <img src="https://images.unsplash.com/photo-1512223792601-592a9809eed4?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Not Availble" className="Cover-Image" />
+                        <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Not Availble" className="Cover-Image" />
+                    </div>
+                </>
+            }
+
+
             <div>
                 <RecipeCard detail={data} />
             </div>

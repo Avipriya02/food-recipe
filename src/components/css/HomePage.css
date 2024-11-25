@@ -25,6 +25,18 @@ body{
         padding: 10px 15px;
         font-size: 18px;
     }
+    .Home_Page-Cover-Photos{
+        width: 70vw;
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .Cover-Image{
+        height: 400px;
+        width:400px;
+        object-fit: cover;
+        border-radius: 40px;
+    }
     .searchBar input{
         width: 90%;
         height: 100%;
@@ -41,6 +53,20 @@ body{
 }
 
 @media screen and (max-width: 499px){
+    .Home_Page-Cover-Photos{
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        margin: 30px auto;
+    }
+    .Cover-Image{
+        height: 400px;
+        width:100%;
+        object-fit: cover;
+        border-radius: 40px;
+    } 
     .head-home-page{
         text-align: center;
         color: brown;
