@@ -38,9 +38,9 @@ const HomePage = () => {
     return (
         <>
             <h1 className="head-home-page">Cook & Eat Food Recipe App!</h1>
-            <h4 className="sub-heading">Search Recipes Here</h4>
+            <h4 className="sub-heading">Search Your Recipes Here</h4>
             <div className="searchBar">
-                <input type="text" placeholder="Search for a recipe" onChange={searchQuery}></input>
+                <input type="text" placeholder="Search Recipes Here" onChange={searchQuery}></input>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search searchbtn" viewBox="0 0 16 16" onClick={apicallFunction}>
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                 </svg>
@@ -56,7 +56,7 @@ const HomePage = () => {
                     </div><div className="Home_Page-Cover-Photos">
                         <img src="https://images.unsplash.com/photo-1633424411336-f5b7a6886d88?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Not Available" className="Cover-Image" />
                         <img src="https://images.unsplash.com/photo-1512223792601-592a9809eed4?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Not Availble" className="Cover-Image" />
-                        <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Not Availble" className="Cover-Image" />
+                        <img src="https://images.unsplash.com/photo-1512223792601-592a9809eed4?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Not Availble" className="Cover-Image" />
                     </div>
                 </>
             }
