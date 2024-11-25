@@ -86,7 +86,7 @@ body{
         border: 2px solid lightgray;
         border-radius: 30px;
         padding: 10px 15px;
-        font-size: 12px;
+        font-size: 10px;
     }
     .searchBar input{
         width: 90%;
