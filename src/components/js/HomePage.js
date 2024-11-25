@@ -18,7 +18,8 @@ const HomePage = () => {
         }
         try {
             setLoad(true);
-            const getAPI = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`);
+            const getAPI = await fetch(`hhttps://api.api-ninjas.com/v1/recipe?query=${query}`);
+            
             const convertDataToJSON = await getAPI.json();
             // Check if meals are found
             if (!convertDataToJSON.meals || convertDataToJSON.meals.length === 0) {
@@ -56,7 +57,7 @@ const HomePage = () => {
                     </div><div className="Home_Page-Cover-Photos">
                         <img src="https://images.unsplash.com/photo-1633424411336-f5b7a6886d88?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Not Available" className="Cover-Image" />
                         <img src="https://images.unsplash.com/photo-1512223792601-592a9809eed4?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Not Availble" className="Cover-Image" />
-                        <img src="https://images.unsplash.com/photo-1512223792601-592a9809eed4?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Not Availble" className="Cover-Image" />
+                        <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Not Availble" className="Cover-Image" />
                     </div>
                 </>
             }

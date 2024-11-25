@@ -26,16 +26,16 @@ body{
         font-size: 18px;
     }
     .Home_Page-Cover-Photos{
-        width: 70vw;
+        width: 90vw;
         margin: 50px auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 20px;
     }
     .Cover-Image{
-        height: 400px;
-        width:400px;
+        height: 300px;
+        width:300px;
         object-fit: cover;
-        border-radius: 40px;
     }
     .searchBar input{
         width: 90%;
@@ -62,10 +62,9 @@ body{
         margin: 30px auto;
     }
     .Cover-Image{
-        height: 400px;
+        height: 300px;
         width:100%;
         object-fit: cover;
-        border-radius: 40px;
     } 
     .head-home-page{
         text-align: center;
@@ -80,7 +79,7 @@ body{
     .searchBar{
         display: flex;
         justify-content: space-between;
-        width:50vw;
+        width:60vw;
         height: 50px;
         margin:10px auto;
         border: 2px solid lightgray;
